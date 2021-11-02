@@ -1,3 +1,5 @@
+
+// v1 
 function isEmpty(value) {
   if (value == null || value === undefined) {
     return true;
@@ -19,3 +21,7 @@ function isEmpty(value) {
   }
   return false;
 }
+
+// v2
+const isEmpty = (val) => val == null || !(Object.keys(val) || val).length;
+
